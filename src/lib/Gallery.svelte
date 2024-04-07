@@ -4,7 +4,7 @@
     import { v4 as uuidv4 } from 'uuid';
     import { flip } from 'svelte/animate';
 
-    const API = 'https://cataas.com/cat';
+    const API = 'https://cataas.com/cat/gif';
 
     let images = [];
     export let loading;
