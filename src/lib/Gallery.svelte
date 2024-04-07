@@ -3,6 +3,7 @@
     import Image from "./Image.svelte";
     import { v4 as uuidv4 } from 'uuid';
     import { flip } from 'svelte/animate';
+	import { onMount } from 'svelte';
 
     const API = 'https://cataas.com/cat/gif';
 
@@ -21,6 +22,10 @@
         images = images;
         loading = false;
     }
+
+    onMount(() => {
+        add_image_to_load();
+    });
 </script>
 
 <div class="gallery">
